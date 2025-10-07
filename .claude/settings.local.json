@@ -12,7 +12,8 @@
       "Bash(git remote add:*)",
       "Bash(git branch:*)",
       "Bash(git push:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "WebFetch(domain:studio83tenerife.blogspot.com)"
     ],
     "deny": [],
     "ask": []

@@ -5,35 +5,42 @@ export default function Home() {
   const posts = getAllPosts();
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
-      {/* Hero Section */}
-      <section className="text-center py-16 border-b border-[--border]">
-        <h1 className="text-5xl font-bold mb-6 text-[--foreground]">
-          Consapevolmente Belli
-        </h1>
-        <p className="text-xl text-[--text-muted] max-w-2xl mx-auto mb-8">
-          Il blog di Cristina Cafagno dedicato alla bellezza consapevole,
-          naturale e olistica. Una rivoluzione contro il mondo finto dell&apos;estetica.
-        </p>
-        <div className="flex gap-4 justify-center">
-          <a
-            href="https://studio83.es"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-[--primary] text-white rounded-full hover:bg-[--primary-dark] transition-colors font-medium"
-          >
-            Visita Studio83
-          </a>
-          <a
-            href="https://www.instagram.com/studio83_beautysolution/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 border-2 border-[--primary] text-[--primary] rounded-full hover:bg-[--primary] hover:text-white transition-colors font-medium"
-          >
-            Seguimi su Instagram
-          </a>
+    <div>
+      {/* Hero Section with Background */}
+      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-[--accent] via-[--background] to-[--accent] border-b border-[--border]">
+        {/* Decorative overlay */}
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_50%,_var(--primary)_0%,_transparent_50%)]"></div>
+
+        <div className="relative z-10 text-center px-6 py-16 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-[--foreground]">
+            Consapevolmente Belli
+          </h1>
+          <p className="text-xl md:text-2xl text-[--text-muted] mb-8 leading-relaxed">
+            Il blog di Cristina Cafagno dedicato alla bellezza consapevole,
+            naturale e olistica. Una rivoluzione contro il mondo finto dell&apos;estetica.
+          </p>
+          <div className="flex gap-4 justify-center flex-wrap">
+            <a
+              href="https://studio83.es"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-[--primary] text-white rounded-full hover:bg-[--primary-dark] transition-colors font-medium shadow-lg"
+            >
+              Visita Studio83
+            </a>
+            <a
+              href="https://www.instagram.com/studio83_beautysolution/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 border-2 border-[--primary] text-[--primary] rounded-full hover:bg-[--primary] hover:text-white transition-colors font-medium"
+            >
+              Seguimi su Instagram
+            </a>
+          </div>
         </div>
       </section>
+
+      <div className="max-w-5xl mx-auto px-6 py-12">
 
       {/* Posts Grid */}
       <section className="py-12">
@@ -83,21 +90,29 @@ export default function Home() {
         )}
       </section>
 
-      {/* About Section */}
-      <section className="py-12 border-t border-[--border]">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6 text-[--foreground]">Chi Sono</h2>
-          <p className="text-lg text-[--text-muted] mb-6">
+      {/* About Section with Profile */}
+      <section className="py-16 border-t border-[--border] bg-[--accent]">
+        <div className="max-w-3xl mx-auto text-center px-6">
+          {/* Profile Photo Placeholder */}
+          <div className="mb-8 flex justify-center">
+            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[--primary] to-[--secondary] flex items-center justify-center text-white text-4xl font-bold shadow-xl">
+              CC
+            </div>
+          </div>
+
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[--foreground]">Chi Sono</h2>
+          <p className="text-lg md:text-xl text-[--text-muted] mb-6 leading-relaxed">
             Sono <strong className="text-[--foreground]">Cristina Cafagno</strong>,
             estetista, formatrice e mamma. Gestisco Studio83 a Tenerife, dove ogni trattamento
             è un viaggio verso la consapevolezza di sé e la bellezza autentica.
           </p>
-          <p className="text-lg text-[--text-muted]">
+          <p className="text-lg md:text-xl text-[--text-muted] leading-relaxed">
             Questo blog è la mia dichiarazione di guerra al mondo finto della bellezza.
             Qui troverai verità, consapevolezza e strumenti per ritrovare te stesso.
           </p>
         </div>
       </section>
+      </div>
     </div>
   );
 }

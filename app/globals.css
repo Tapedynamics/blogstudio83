@@ -1,15 +1,16 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
-  /* Colori Studio83 - tonalità neutre eleganti con accenti dorati */
-  --background: #fafafa;
-  --foreground: #2c2c2c;
-  --primary: #d4a574; /* oro/bronzo elegante */
-  --primary-dark: #b8845a;
-  --secondary: #8b7355;
-  --accent: #f5e6d3;
-  --text-muted: #6b6b6b;
-  --border: #e5e5e5;
+  /* Colori Studio83 - ispirato al vecchio blog */
+  --background: #fdfaf0; /* beige chiaro e caldo */
+  --foreground: #000000; /* nero intenso */
+  --primary: #a93e33; /* rosso mattone elegante */
+  --primary-dark: #8b2e24;
+  --secondary: #d4a574; /* oro/bronzo come secondario */
+  --accent: #f5ede0;
+  --text-muted: #5a5a5a;
+  --border: #e8dcc8;
 }
 
 @theme inline {
@@ -21,19 +22,19 @@
   --color-accent: var(--accent);
   --color-text-muted: var(--text-muted);
   --color-border: var(--border);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-serif: 'EB Garamond', Georgia, serif;
+  --font-sans: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: var(--font-serif);
   line-height: 1.7;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-sans);
   font-weight: 600;
   line-height: 1.3;
 }

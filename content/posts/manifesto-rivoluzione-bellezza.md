@@ -3,7 +3,7 @@ title: "Consapevolmente Belli: il Manifesto della Rivoluzione della Bellezza"
 excerpt: "Una dichiarazione di guerra al mondo finto della bellezza. Scopri il nuovo manifesto per una bellezza consapevole, naturale e olistica."
 date: "2025-10-07"
 author: "Cristina Cafagno"
-image: "/images/manifesto-hero.jpg"
+image: "/images/post-default.png"
 tags: ["manifesto", "bellezza consapevole", "estetica olistica"]
 pinned: true
 ---

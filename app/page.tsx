@@ -93,9 +93,10 @@ export default function Home() {
                 {/* Immagine del post */}
                 <div className="aspect-video relative overflow-hidden bg-[--accent]">
                   <img
-                    src={post.image || "/images/post-default.png"}
+                    src={post.image || "/images/post-default.png?v=2"}
                     alt={post.title}
                     className="w-full h-full object-cover opacity-90"
+                    loading="lazy"
                   />
                 </div>
                 <div className="p-6">

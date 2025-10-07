@@ -90,10 +90,10 @@ export default function Home() {
                     📌 INIZIA QUI
                   </div>
                 )}
-                {/* Immagine decorativa sempre presente */}
+                {/* Immagine del post */}
                 <div className="aspect-video relative overflow-hidden bg-[--accent]">
                   <img
-                    src="/images/post-default.png"
+                    src={post.image || "/images/post-default.png"}
                     alt={post.title}
                     className="w-full h-full object-cover opacity-90"
                   />

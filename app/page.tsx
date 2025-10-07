@@ -91,17 +91,12 @@ export default function Home() {
                   </div>
                 )}
                 {/* Immagine decorativa sempre presente */}
-                <div className="aspect-video bg-gradient-to-br from-[--accent] via-[--accent-light] to-[--background] relative overflow-hidden">
-                  {/* Pattern organico */}
-                  <div className="absolute inset-0 opacity-20">
-                    <div className="absolute top-4 right-8 w-24 h-24 rounded-full bg-[--sage] blur-2xl"></div>
-                    <div className="absolute bottom-8 left-12 w-32 h-32 rounded-full bg-[--earth] blur-3xl"></div>
-                    <div className="absolute top-1/2 right-1/4 w-20 h-20 rounded-full bg-[--primary] blur-xl"></div>
-                  </div>
-                  {/* Emoji decorativo */}
-                  <div className="absolute inset-0 flex items-center justify-center text-6xl opacity-30">
-                    🌿
-                  </div>
+                <div className="aspect-video relative overflow-hidden bg-[--accent]">
+                  <img
+                    src="/images/post-default.png"
+                    alt={post.title}
+                    className="w-full h-full object-cover opacity-90"
+                  />
                 </div>
                 <div className="p-6">
                   <div className="flex gap-2 mb-3">

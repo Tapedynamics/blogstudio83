@@ -13,27 +13,27 @@ export default function Home() {
           <img
             src="/images/hero-bg.png"
             alt="Studio83 Tenerife"
-            className="w-full h-auto object-cover max-h-[60vh]"
+            className="w-full h-auto object-cover max-h-[50vh] sm:max-h-[60vh]"
           />
         </div>
 
         {/* Content Below Image */}
-        <div className="bg-gradient-to-br from-[--accent-light] via-[--background] to-[--accent] py-16">
-          <div className="text-center px-6 max-w-4xl mx-auto">
-            <div className="mb-4 text-4xl">🌿</div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 logo-conscious pb-4">
+        <div className="bg-gradient-to-br from-[--accent-light] via-[--background] to-[--accent] py-8 sm:py-12 md:py-16">
+          <div className="text-center px-4 sm:px-6 max-w-4xl mx-auto">
+            <div className="mb-3 sm:mb-4 text-3xl sm:text-4xl">🌿</div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 logo-conscious pb-3 sm:pb-4">
               Consapevolmente Belli
             </h1>
-            <p className="text-xl md:text-2xl text-[--text-muted] mb-8 leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-[--text-muted] mb-6 sm:mb-8 leading-relaxed">
               Il blog di Cristina Cafagno dedicato alla bellezza consapevole,
               naturale e olistica. Una rivoluzione contro il mondo finto dell&apos;estetica.
             </p>
-            <div className="flex gap-4 justify-center flex-wrap">
+            <div className="flex gap-3 sm:gap-4 justify-center flex-wrap">
               <a
                 href="https://studio83.es"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3 bg-gradient-to-r from-[--primary] to-[--sage] text-white rounded-full hover:shadow-lg transition-all font-medium"
+                className="px-6 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-base bg-gradient-to-r from-[--primary] to-[--sage] text-white rounded-full hover:shadow-lg transition-all font-medium"
               >
                 Visita Studio83
               </a>
@@ -41,7 +41,7 @@ export default function Home() {
                 href="https://www.instagram.com/studio83_beautysolution/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3 border-2 border-[--primary] text-[--primary] rounded-full hover:bg-[--primary] hover:text-white transition-all font-medium"
+                className="px-6 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-base border-2 border-[--primary] text-[--primary] rounded-full hover:bg-[--primary] hover:text-white transition-all font-medium"
               >
                 Seguimi su Instagram
               </a>
@@ -50,17 +50,17 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-6 py-12">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
 
       {/* Posts Grid */}
-      <section className="py-12">
-        <h2 className="text-3xl font-bold mb-8 text-[--foreground]">Ultimi Articoli</h2>
+      <section className="py-8 sm:py-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-[--foreground]">Ultimi Articoli</h2>
         {posts.length === 0 ? (
           <p className="text-[--text-muted] text-center py-12">
             Nessun articolo disponibile al momento. Torna presto!
           </p>
         ) : (
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {posts.map((post) => (
               <Link
                 key={post.slug}
@@ -109,22 +109,22 @@ export default function Home() {
       </section>
 
       {/* About Section with Profile */}
-      <section className="py-16 border-t border-[--border] bg-[--accent]">
-        <div className="max-w-3xl mx-auto text-center px-6">
+      <section className="py-12 sm:py-16 border-t border-[--border] bg-[--accent]">
+        <div className="max-w-3xl mx-auto text-center px-4 sm:px-6">
           {/* Profile Photo Placeholder */}
-          <div className="mb-8 flex justify-center">
-            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[--primary] to-[--secondary] flex items-center justify-center text-white text-4xl font-bold shadow-xl">
+          <div className="mb-6 sm:mb-8 flex justify-center">
+            <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-[--primary] to-[--secondary] flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-xl">
               CC
             </div>
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[--foreground]">Chi Sono</h2>
-          <p className="text-lg md:text-xl text-[--text-muted] mb-6 leading-relaxed">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[--foreground]">Chi Sono</h2>
+          <p className="text-base sm:text-lg md:text-xl text-[--text-muted] mb-4 sm:mb-6 leading-relaxed">
             Sono <strong className="text-[--foreground]">Cristina Cafagno</strong>,
             estetista, formatrice e mamma. Gestisco Studio83 a Tenerife, dove ogni trattamento
             è un viaggio verso la consapevolezza di sé e la bellezza autentica.
           </p>
-          <p className="text-lg md:text-xl text-[--text-muted] leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-[--text-muted] leading-relaxed">
             Questo blog è la mia dichiarazione di guerra al mondo finto della bellezza.
             Qui troverai verità, consapevolezza e strumenti per ritrovare te stesso.
           </p>

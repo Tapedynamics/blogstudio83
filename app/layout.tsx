@@ -37,19 +37,19 @@ export default function RootLayout({
     <html lang="it">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <header className="border-b border-[--border] bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-          <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <Link href="/" className="text-3xl md:text-4xl font-bold logo-conscious-header hover:opacity-80 transition-opacity">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
+            <Link href="/" className="text-xl sm:text-2xl md:text-4xl font-bold logo-conscious-header hover:opacity-80 transition-opacity">
               Consapevolmente Belli
             </Link>
-            <nav className="flex gap-6 items-center">
-              <Link href="/" className="text-[--text-muted] hover:text-[--primary] transition-colors">
+            <nav className="flex gap-3 sm:gap-6 items-center">
+              <Link href="/" className="hidden sm:inline text-[--text-muted] hover:text-[--primary] transition-colors">
                 Blog
               </Link>
               <a
                 href="https://studio83.es"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-[--primary] text-white rounded-full hover:bg-[--primary-dark] transition-colors"
+                className="px-3 py-1.5 sm:px-4 sm:py-2 text-sm sm:text-base bg-[--primary] text-white rounded-full hover:bg-[--primary-dark] transition-colors"
               >
                 Studio83
               </a>
@@ -61,9 +61,9 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer className="border-t border-[--border] bg-[--accent] py-12 mt-20">
-          <div className="max-w-5xl mx-auto px-6">
-            <div className="grid md:grid-cols-3 gap-8">
+        <footer className="border-t border-[--border] bg-[--accent] py-8 sm:py-12 mt-12 sm:mt-20">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
               <div>
                 <h3 className="font-bold mb-4 text-[--foreground]">Consapevolmente Belli</h3>
                 <p className="text-sm text-[--text-muted]">
@@ -117,9 +117,9 @@ export default function RootLayout({
               </div>
             </div>
 
-            <div className="mt-8 pt-8 border-t border-[--border] text-center text-sm text-[--text-muted]">
+            <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-[--border] text-center text-xs sm:text-sm text-[--text-muted]">
               <p>&copy; {new Date().getFullYear()} Studio83. Tutti i diritti riservati.</p>
-              <div className="mt-2 flex justify-center gap-4">
+              <div className="mt-2 flex justify-center gap-3 sm:gap-4 flex-wrap">
                 <a href="https://studio83.es/aviso-legal/" className="hover:text-[--primary]">Avviso Legale</a>
                 <a href="https://studio83.es/politica-de-privacidad/" className="hover:text-[--primary]">Privacy</a>
                 <a href="https://studio83.es/politica-de-cookies/" className="hover:text-[--primary]">Cookie</a>

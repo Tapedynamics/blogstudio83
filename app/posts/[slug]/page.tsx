@@ -49,23 +49,23 @@ export default async function PostPage({ params }: PostPageProps) {
   }
 
   return (
-    <article className="max-w-4xl mx-auto px-6 py-12">
+    <article className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
       {/* Header */}
-      <header className="mb-12 pb-8 border-b border-[--border]">
-        <div className="flex gap-2 mb-4">
+      <header className="mb-8 sm:mb-12 pb-6 sm:pb-8 border-b border-[--border]">
+        <div className="flex gap-2 mb-3 sm:mb-4 flex-wrap">
           {post.tags?.map((tag) => (
             <span
               key={tag}
-              className="text-xs px-3 py-1 bg-[--accent] text-[--secondary] rounded-full"
+              className="text-xs px-2.5 sm:px-3 py-1 bg-[--accent] text-[--secondary] rounded-full"
             >
               {tag}
             </span>
           ))}
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[--foreground] leading-tight">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-[--foreground] leading-tight">
           {post.title}
         </h1>
-        <div className="flex items-center gap-4 text-[--text-muted]">
+        <div className="flex items-center gap-2 sm:gap-4 text-sm sm:text-base text-[--text-muted] flex-wrap">
           <span className="font-medium text-[--foreground]">{post.author}</span>
           <span>•</span>
           <time dateTime={post.date}>
@@ -79,36 +79,36 @@ export default async function PostPage({ params }: PostPageProps) {
       </header>
 
       {/* Content */}
-      <div className="prose prose-lg max-w-none">
+      <div className="prose prose-base sm:prose-lg max-w-none">
         <ReactMarkdown
           components={{
             h1: ({ children }) => (
-              <h1 className="text-4xl font-bold mb-6 mt-12 text-[--foreground]">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 mt-8 sm:mt-12 text-[--foreground]">
                 {children}
               </h1>
             ),
             h2: ({ children }) => (
-              <h2 className="text-3xl font-bold mb-4 mt-10 text-[--foreground]">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 mt-6 sm:mt-10 text-[--foreground]">
                 {children}
               </h2>
             ),
             h3: ({ children }) => (
-              <h3 className="text-2xl font-bold mb-3 mt-8 text-[--foreground]">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 mt-4 sm:mt-8 text-[--foreground]">
                 {children}
               </h3>
             ),
             p: ({ children }) => (
-              <p className="mb-6 text-[--foreground] leading-relaxed text-lg">
+              <p className="mb-4 sm:mb-6 text-[--foreground] leading-relaxed text-base sm:text-lg">
                 {children}
               </p>
             ),
             ul: ({ children }) => (
-              <ul className="list-none mb-6 space-y-2 text-[--foreground]">
+              <ul className="list-none mb-4 sm:mb-6 space-y-2 text-[--foreground]">
                 {children}
               </ul>
             ),
             li: ({ children }) => (
-              <li className="pl-0 text-lg">{children}</li>
+              <li className="pl-0 text-base sm:text-lg">{children}</li>
             ),
             strong: ({ children }) => (
               <strong className="font-bold text-[--foreground]">{children}</strong>
@@ -136,20 +136,20 @@ export default async function PostPage({ params }: PostPageProps) {
       </div>
 
       {/* CTA Section */}
-      <div className="mt-16 pt-12 border-t border-[--border]">
-        <div className="bg-[--accent] rounded-lg p-8 text-center">
-          <h3 className="text-2xl font-bold mb-4 text-[--foreground]">
+      <div className="mt-12 sm:mt-16 pt-8 sm:pt-12 border-t border-[--border]">
+        <div className="bg-[--accent] rounded-lg p-6 sm:p-8 text-center">
+          <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-[--foreground]">
             Vuoi scoprire di più?
           </h3>
-          <p className="text-[--text-muted] mb-6">
+          <p className="text-sm sm:text-base text-[--text-muted] mb-5 sm:mb-6">
             Seguimi sui social per contenuti esclusivi e prenota il tuo trattamento da Studio83
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
+          <div className="flex gap-3 sm:gap-4 justify-center flex-wrap">
             <a
               href="https://www.instagram.com/studio83_beautysolution/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-[--primary] text-white rounded-full hover:bg-[--primary-dark] transition-colors font-medium"
+              className="px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base bg-[--primary] text-white rounded-full hover:bg-[--primary-dark] transition-colors font-medium"
             >
               Instagram
             </a>
@@ -157,7 +157,7 @@ export default async function PostPage({ params }: PostPageProps) {
               href="https://www.facebook.com/studio83beautysolution"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-[--primary] text-white rounded-full hover:bg-[--primary-dark] transition-colors font-medium"
+              className="px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base bg-[--primary] text-white rounded-full hover:bg-[--primary-dark] transition-colors font-medium"
             >
               Facebook
             </a>
@@ -165,7 +165,7 @@ export default async function PostPage({ params }: PostPageProps) {
               href="https://wa.me/34634011846"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 border-2 border-[--primary] text-[--primary] rounded-full hover:bg-[--primary] hover:text-white transition-colors font-medium"
+              className="px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base border-2 border-[--primary] text-[--primary] rounded-full hover:bg-[--primary] hover:text-white transition-colors font-medium"
             >
               WhatsApp
             </a>

@@ -6,46 +6,46 @@ export default function Home() {
 
   return (
     <div>
-      {/* Hero Section with Background */}
-      <section className="relative min-h-[70vh] flex items-center justify-center border-b border-[--border]">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(/images/hero-bg.png)',
-            opacity: 0.15
-          }}
-        ></div>
+      {/* Hero Section - Image Full Width */}
+      <section className="border-b border-[--border]">
+        {/* Full Width Image */}
+        <div className="w-full">
+          <img
+            src="/images/hero-bg.png"
+            alt="Studio83 Tenerife"
+            className="w-full h-auto object-cover max-h-[60vh]"
+          />
+        </div>
 
-        {/* Gradient overlay per migliorare leggibilità */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[--background]/95 via-[--background]/90 to-[--accent]/95"></div>
-
-        <div className="relative z-10 text-center px-6 py-16 max-w-4xl mx-auto">
-          <div className="mb-4 text-4xl">🌿</div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 logo-conscious pb-4">
-            Consapevolmente Belli
-          </h1>
-          <p className="text-xl md:text-2xl text-[--text-muted] mb-8 leading-relaxed">
-            Il blog di Cristina Cafagno dedicato alla bellezza consapevole,
-            naturale e olistica. Una rivoluzione contro il mondo finto dell&apos;estetica.
-          </p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a
-              href="https://studio83.es"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-3 bg-gradient-to-r from-[--primary] to-[--sage] text-white rounded-full hover:shadow-lg transition-all font-medium"
-            >
-              Visita Studio83
-            </a>
-            <a
-              href="https://www.instagram.com/studio83_beautysolution/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-3 border-2 border-[--primary] text-[--primary] rounded-full hover:bg-[--primary] hover:text-white transition-all font-medium"
-            >
-              Seguimi su Instagram
-            </a>
+        {/* Content Below Image */}
+        <div className="bg-gradient-to-br from-[--accent-light] via-[--background] to-[--accent] py-16">
+          <div className="text-center px-6 max-w-4xl mx-auto">
+            <div className="mb-4 text-4xl">🌿</div>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 logo-conscious pb-4">
+              Consapevolmente Belli
+            </h1>
+            <p className="text-xl md:text-2xl text-[--text-muted] mb-8 leading-relaxed">
+              Il blog di Cristina Cafagno dedicato alla bellezza consapevole,
+              naturale e olistica. Una rivoluzione contro il mondo finto dell&apos;estetica.
+            </p>
+            <div className="flex gap-4 justify-center flex-wrap">
+              <a
+                href="https://studio83.es"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 bg-gradient-to-r from-[--primary] to-[--sage] text-white rounded-full hover:shadow-lg transition-all font-medium"
+              >
+                Visita Studio83
+              </a>
+              <a
+                href="https://www.instagram.com/studio83_beautysolution/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 border-2 border-[--primary] text-[--primary] rounded-full hover:bg-[--primary] hover:text-white transition-all font-medium"
+              >
+                Seguimi su Instagram
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -5,6 +5,7 @@ date: "2025-10-07"
 author: "Cristina Cafagno"
 image: "/images/manifesto-hero.jpg"
 tags: ["manifesto", "bellezza consapevole", "estetica olistica"]
+pinned: true
 ---
 
 # Consapevolmente Belli: il Manifesto della Rivoluzione della Bellezza

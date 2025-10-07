@@ -12,6 +12,7 @@ export interface Post {
   author: string;
   image?: string;
   tags?: string[];
+  pinned?: boolean;
   content: string;
 }
 
@@ -38,12 +39,17 @@ export function getAllPosts(): Post[] {
         author: data.author || 'Cristina Cafagno',
         image: data.image,
         tags: data.tags || [],
+        pinned: data.pinned || false,
         content,
       };
     });
 
-  // Sort posts by date (newest first)
-  return posts.sort((a, b) => (a.date > b.date ? -1 : 1));
+  // Sort posts: pinned first, then by date (newest first)
+  return posts.sort((a, b) => {
+    if (a.pinned && !b.pinned) return -1;
+    if (!a.pinned && b.pinned) return 1;
+    return a.date > b.date ? -1 : 1;
+  });
 }
 
 export function getPostBySlug(slug: string): Post | null {
@@ -60,6 +66,7 @@ export function getPostBySlug(slug: string): Post | null {
       author: data.author || 'Cristina Cafagno',
       image: data.image,
       tags: data.tags || [],
+      pinned: data.pinned || false,
       content,
     };
   } catch {

@@ -79,8 +79,17 @@ export default function Home() {
               <Link
                 key={post.slug}
                 href={`/posts/${post.slug}`}
-                className="group border border-[--border] rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
+                className={`group border rounded-lg overflow-hidden hover:shadow-lg transition-shadow ${
+                  post.pinned
+                    ? 'border-[--primary] border-2 bg-gradient-to-br from-[--accent-light] to-white relative'
+                    : 'border-[--border]'
+                }`}
               >
+                {post.pinned && (
+                  <div className="absolute top-3 right-3 bg-[--primary] text-white px-3 py-1 rounded-full text-xs font-bold z-10 flex items-center gap-1">
+                    📌 INIZIA QUI
+                  </div>
+                )}
                 {/* Immagine decorativa sempre presente */}
                 <div className="aspect-video bg-gradient-to-br from-[--accent] via-[--accent-light] to-[--background] relative overflow-hidden">
                   {/* Pattern organico */}

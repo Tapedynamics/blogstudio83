@@ -38,7 +38,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <header className="border-b border-[--border] bg-white/80 backdrop-blur-sm sticky top-0 z-50">
           <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <Link href="/" className="text-2xl font-bold logo-conscious hover:opacity-80 transition-opacity">
+            <Link href="/" className="text-3xl md:text-4xl font-bold logo-conscious-header hover:opacity-80 transition-opacity">
               Consapevolmente Belli
             </Link>
             <nav className="flex gap-6 items-center">

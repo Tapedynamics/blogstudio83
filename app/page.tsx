@@ -111,11 +111,13 @@ export default function Home() {
       {/* About Section with Profile */}
       <section className="py-12 sm:py-16 border-t border-[--border] bg-[--accent]">
         <div className="max-w-3xl mx-auto text-center px-4 sm:px-6">
-          {/* Profile Photo Placeholder */}
+          {/* Profile Photo */}
           <div className="mb-6 sm:mb-8 flex justify-center">
-            <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-[--primary] to-[--secondary] flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-xl">
-              CC
-            </div>
+            <img
+              src="/images/cristina-profile.jpg"
+              alt="Cristina Cafagno"
+              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow-xl border-4 border-white"
+            />
           </div>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[--foreground]">Chi Sono</h2>

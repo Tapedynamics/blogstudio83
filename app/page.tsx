@@ -62,11 +62,19 @@ export default function Home() {
                 href={`/posts/${post.slug}`}
                 className="group border border-[--border] rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
               >
-                {post.image && (
-                  <div className="aspect-video bg-[--accent] relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[--primary] to-[--secondary] opacity-50" />
+                {/* Immagine decorativa sempre presente */}
+                <div className="aspect-video bg-gradient-to-br from-[--accent] via-[--accent-light] to-[--background] relative overflow-hidden">
+                  {/* Pattern organico */}
+                  <div className="absolute inset-0 opacity-20">
+                    <div className="absolute top-4 right-8 w-24 h-24 rounded-full bg-[--sage] blur-2xl"></div>
+                    <div className="absolute bottom-8 left-12 w-32 h-32 rounded-full bg-[--earth] blur-3xl"></div>
+                    <div className="absolute top-1/2 right-1/4 w-20 h-20 rounded-full bg-[--primary] blur-xl"></div>
                   </div>
-                )}
+                  {/* Emoji decorativo */}
+                  <div className="absolute inset-0 flex items-center justify-center text-6xl opacity-30">
+                    🌿
+                  </div>
+                </div>
                 <div className="p-6">
                   <div className="flex gap-2 mb-3">
                     {post.tags?.slice(0, 2).map((tag) => (

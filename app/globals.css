@@ -2,15 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
-  /* Colori Studio83 - ispirato al vecchio blog */
-  --background: #fdfaf0; /* beige chiaro e caldo */
-  --foreground: #000000; /* nero intenso */
-  --primary: #a93e33; /* rosso mattone elegante */
-  --primary-dark: #8b2e24;
-  --secondary: #d4a574; /* oro/bronzo come secondario */
-  --accent: #f5ede0;
-  --text-muted: #5a5a5a;
-  --border: #e8dcc8;
+  /* Colori Studio83 - palette naturale e olistica */
+  --background: #fdfbf7; /* bianco naturale caldo */
+  --foreground: #2d3436; /* grigio antracite morbido */
+  --primary: #7d9d7f; /* verde salvia naturale */
+  --primary-dark: #5d7d5f;
+  --secondary: #c9a86a; /* oro antico morbido */
+  --accent: #f4f0e8; /* sabbia chiara */
+  --accent-light: #faf8f3;
+  --earth: #a78b6f; /* terra */
+  --sage: #9db09a; /* salvia chiaro */
+  --text-muted: #6b7280;
+  --border: #e7e3d9;
 }
 
 @theme inline {
@@ -20,6 +23,9 @@
   --color-primary-dark: var(--primary-dark);
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-earth: var(--earth);
+  --color-sage: var(--sage);
   --color-text-muted: var(--text-muted);
   --color-border: var(--border);
   --font-serif: 'EB Garamond', Georgia, serif;
@@ -47,4 +53,25 @@ a {
 
 a:hover {
   color: var(--primary-dark);
+}
+
+/* Logo styling per Consapevolmente Belli */
+.logo-conscious {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  letter-spacing: 0.02em;
+}
+
+.logo-conscious::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--sage), transparent);
+  opacity: 0.6;
 }

@@ -7,12 +7,17 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section with Background */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-[--accent] via-[--background] to-[--accent] border-b border-[--border]">
-        {/* Decorative overlay */}
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_50%,_var(--primary)_0%,_transparent_50%)]"></div>
+      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-[--accent-light] via-[--background] to-[--accent] border-b border-[--border]">
+        {/* Decorative overlay - foglie organiche */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-[--sage] blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-40 h-40 rounded-full bg-[--earth] blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/3 w-24 h-24 rounded-full bg-[--primary] blur-2xl"></div>
+        </div>
 
         <div className="relative z-10 text-center px-6 py-16 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-[--foreground]">
+          <div className="mb-4 text-4xl">🌿</div>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 logo-conscious pb-4">
             Consapevolmente Belli
           </h1>
           <p className="text-xl md:text-2xl text-[--text-muted] mb-8 leading-relaxed">
@@ -24,7 +29,7 @@ export default function Home() {
               href="https://studio83.es"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 bg-[--primary] text-white rounded-full hover:bg-[--primary-dark] transition-colors font-medium shadow-lg"
+              className="px-8 py-3 bg-gradient-to-r from-[--primary] to-[--sage] text-white rounded-full hover:shadow-lg transition-all font-medium"
             >
               Visita Studio83
             </a>
@@ -32,7 +37,7 @@ export default function Home() {
               href="https://www.instagram.com/studio83_beautysolution/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 border-2 border-[--primary] text-[--primary] rounded-full hover:bg-[--primary] hover:text-white transition-colors font-medium"
+              className="px-8 py-3 border-2 border-[--primary] text-[--primary] rounded-full hover:bg-[--primary] hover:text-white transition-all font-medium"
             >
               Seguimi su Instagram
             </a>

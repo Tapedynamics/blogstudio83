@@ -62,7 +62,7 @@ export function getPostBySlug(slug: string): Post | null {
       tags: data.tags || [],
       content,
     };
-  } catch (error) {
+  } catch {
     return null;
   }
 }

@@ -67,7 +67,7 @@ export default function RootLayout({
               <div>
                 <h3 className="font-bold mb-4 text-[--foreground]">Consapevolmente Belli</h3>
                 <p className="text-sm text-[--text-muted]">
-                  Il blog di Cristina Cafagno dedicato alla bellezza consapevole e all'estetica olistica.
+                  Il blog di Cristina Cafagno dedicato alla bellezza consapevole e all&apos;estetica olistica.
                 </p>
               </div>
 

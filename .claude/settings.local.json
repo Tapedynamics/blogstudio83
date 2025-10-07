@@ -7,7 +7,12 @@
       "Bash(rm:*)",
       "Bash(npm install:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: Initial blog setup for Studio83 - Consapevolmente Belli\n\n- Created Next.js blog with TypeScript and Tailwind CSS\n- Implemented Studio83 brand colors and design system\n- Added blog post management system with markdown support\n- Created first post: Manifesto della Rivoluzione della Bellezza\n- Integrated all Studio83 social media links and contact info\n- Set up SEO optimization with proper metadata\n- Responsive design with elegant typography\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []

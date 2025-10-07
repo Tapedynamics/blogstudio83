@@ -13,7 +13,7 @@ export default function Home() {
         </h1>
         <p className="text-xl text-[--text-muted] max-w-2xl mx-auto mb-8">
           Il blog di Cristina Cafagno dedicato alla bellezza consapevole,
-          naturale e olistica. Una rivoluzione contro il mondo finto dell'estetica.
+          naturale e olistica. Una rivoluzione contro il mondo finto dell&apos;estetica.
         </p>
         <div className="flex gap-4 justify-center">
           <a

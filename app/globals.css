@@ -57,7 +57,7 @@ a:hover {
 
 /* Logo styling per Consapevolmente Belli - hero page */
 .logo-conscious {
-  background: linear-gradient(135deg, #c9a86a 0%, #d4a574 35%, #e8b89a 70%, #f0c4a8 100%);
+  background: linear-gradient(90deg, #6b6b6b 0%, #8b8179 25%, #b89b7f 50%, #d9a574 75%, #e8a85d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -72,13 +72,13 @@ a:hover {
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #d4a574, transparent);
+  background: linear-gradient(90deg, transparent, #d9a574, transparent);
   opacity: 0.6;
 }
 
-/* Logo header - colori ispirati all'immagine hero */
+/* Logo header - colori ispirati all'immagine hero (grigio sx → arancione dx) */
 .logo-conscious-header {
-  background: linear-gradient(135deg, #c9a86a 0%, #d4a574 35%, #e8b89a 70%, #f0c4a8 100%);
+  background: linear-gradient(90deg, #6b6b6b 0%, #8b8179 25%, #b89b7f 50%, #d9a574 75%, #e8a85d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

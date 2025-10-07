@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { getAllPosts } from "@/lib/posts";
 
 export default function Home() {
@@ -93,12 +92,11 @@ export default function Home() {
                 )}
                 {/* Immagine del post */}
                 <div className="aspect-video relative overflow-hidden bg-[--accent]">
-                  <Image
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src={post.image || "/images/post-default.png"}
                     alt={post.title}
-                    fill
-                    className="object-cover opacity-90"
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="w-full h-full object-cover opacity-90"
                   />
                 </div>
                 <div className="p-6">

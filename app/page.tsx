@@ -96,7 +96,11 @@ export default function Home() {
                   <img
                     src={post.image || "/images/post-default.png"}
                     alt={post.title}
-                    className="w-full h-full object-cover opacity-90"
+                    className={`w-full h-full opacity-90 ${
+                      post.slug === 'imparare-a-vedere'
+                        ? 'object-contain bg-black'
+                        : 'object-cover'
+                    }`}
                   />
                 </div>
                 <div className="p-6">

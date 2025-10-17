@@ -13,7 +13,10 @@
       "Bash(git branch:*)",
       "Bash(git push:*)",
       "Bash(git commit:*)",
-      "WebFetch(domain:studio83tenerife.blogspot.com)"
+      "WebFetch(domain:studio83tenerife.blogspot.com)",
+      "WebSearch",
+      "Bash(git archive:*)",
+      "Read(//c/Users/siusk/OneDrive/Desktop/Tape-Dynamics/studio83polpetta file/**)"
     ],
     "deny": [],
     "ask": []

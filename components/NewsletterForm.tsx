@@ -38,13 +38,13 @@ export default function NewsletterForm() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-[--accent-light] to-[--accent] rounded-lg p-6 sm:p-8 border border-[--border]">
+    <div className="bg-gradient-to-br from-[#faf8f3] to-[#f4f0e8] rounded-lg p-6 sm:p-8 border border-[#e7e3d9]">
       <div className="text-center mb-6">
         <div className="mb-3 text-3xl sm:text-4xl">✨</div>
-        <h3 className="text-xl sm:text-2xl font-bold mb-3 text-[--foreground]">
+        <h3 className="text-xl sm:text-2xl font-bold mb-3 text-[#2d3436]">
           Unisciti alla Rivoluzione
         </h3>
-        <p className="text-sm sm:text-base text-[--text-muted] max-w-xl mx-auto">
+        <p className="text-sm sm:text-base text-[#6b7280] max-w-xl mx-auto">
           Ricevi contenuti esclusivi, pratiche di bellezza consapevole e verità che non troverai altrove.
           Direttamente nella tua casella di posta.
         </p>
@@ -59,12 +59,12 @@ export default function NewsletterForm() {
             placeholder="La tua email"
             required
             disabled={status === 'loading'}
-            className="flex-1 px-4 py-3 rounded-full border-2 border-[--border] bg-white text-[--foreground] placeholder:text-[--text-muted] focus:outline-none focus:ring-2 focus:ring-[--primary] focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed text-base"
+            className="flex-1 px-4 py-3 rounded-full border-2 border-[#e7e3d9] bg-white text-[#2d3436] placeholder:text-[#6b7280] focus:outline-none focus:ring-2 focus:ring-[#7d9d7f] focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed text-base"
           />
           <button
             type="submit"
             disabled={status === 'loading'}
-            className="px-8 py-3 bg-[--primary] text-white rounded-full font-semibold hover:bg-[--primary-dark] hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap text-base shadow-md"
+            className="px-8 py-3 bg-[#7d9d7f] text-white rounded-full font-semibold hover:bg-[#5d7d5f] hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap text-base shadow-md"
           >
             {status === 'loading' ? 'Invio...' : 'Iscriviti'}
           </button>
@@ -82,7 +82,7 @@ export default function NewsletterForm() {
           </div>
         )}
 
-        <p className="mt-4 text-xs text-center text-[--text-muted]">
+        <p className="mt-4 text-xs text-center text-[#6b7280]">
           Iscrivendoti, accetti di ricevere email da Consapevolmente Belli.
           Puoi disiscriverti in qualsiasi momento.
         </p>

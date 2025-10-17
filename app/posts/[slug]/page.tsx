@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getPostBySlug, getAllPosts } from "@/lib/posts";
 import ReactMarkdown from "react-markdown";
 import type { Metadata } from "next";
+import NewsletterForm from "@/components/NewsletterForm";
 
 interface PostPageProps {
   params: Promise<{
@@ -135,14 +136,19 @@ export default async function PostPage({ params }: PostPageProps) {
         </ReactMarkdown>
       </div>
 
-      {/* CTA Section */}
-      <div className="mt-12 sm:mt-16 pt-8 sm:pt-12 border-t border-[--border]">
+      {/* Newsletter Section */}
+      <div className="mt-12 sm:mt-16">
+        <NewsletterForm />
+      </div>
+
+      {/* Social CTA Section */}
+      <div className="mt-8 pt-8 border-t border-[--border]">
         <div className="bg-[--accent] rounded-lg p-6 sm:p-8 text-center">
           <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-[--foreground]">
-            Vuoi scoprire di più?
+            Seguimi sui Social
           </h3>
           <p className="text-sm sm:text-base text-[--text-muted] mb-5 sm:mb-6">
-            Seguimi sui social per contenuti esclusivi e prenota il tuo trattamento da Studio83
+            Contenuti quotidiani, pratiche e verità sulla bellezza consapevole
           </p>
           <div className="flex gap-4 sm:gap-5 justify-center flex-wrap">
             <a

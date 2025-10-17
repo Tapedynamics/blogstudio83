@@ -59,12 +59,12 @@ export default function NewsletterForm() {
             placeholder="La tua email"
             required
             disabled={status === 'loading'}
-            className="flex-1 px-4 py-3 rounded-full border border-[--border] bg-white text-[--foreground] placeholder:text-[--text-muted] focus:outline-none focus:ring-2 focus:ring-[--primary] focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed"
+            className="flex-1 px-4 py-3 rounded-full border-2 border-[--border] bg-white text-[--foreground] placeholder:text-[--text-muted] focus:outline-none focus:ring-2 focus:ring-[--primary] focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed text-base"
           />
           <button
             type="submit"
             disabled={status === 'loading'}
-            className="px-6 py-3 bg-gradient-to-r from-[--primary] to-[--sage] text-white rounded-full font-medium hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+            className="px-8 py-3 bg-[--primary] text-white rounded-full font-semibold hover:bg-[--primary-dark] hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap text-base shadow-md"
           >
             {status === 'loading' ? 'Invio...' : 'Iscriviti'}
           </button>

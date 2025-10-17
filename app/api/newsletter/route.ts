@@ -34,6 +34,8 @@ export async function POST(request: NextRequest) {
         email: email,
         listIds: [2], // Default list ID for Brevo (you can change this later)
         updateEnabled: true, // Update if contact already exists
+        emailBlacklisted: false, // Allow email sending
+        smsBlacklisted: false, // Allow SMS (if needed)
       }),
     });
 

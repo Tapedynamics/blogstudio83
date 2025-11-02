@@ -16,7 +16,8 @@
       "WebFetch(domain:studio83tenerife.blogspot.com)",
       "WebSearch",
       "Bash(git archive:*)",
-      "Read(//c/Users/siusk/OneDrive/Desktop/Tape-Dynamics/studio83polpetta file/**)"
+      "Read(//c/Users/siusk/OneDrive/Desktop/Tape-Dynamics/studio83polpetta file/**)",
+      "Bash(timeout /t 5)"
     ],
     "deny": [],
     "ask": []

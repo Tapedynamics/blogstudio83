@@ -18,10 +18,15 @@ export const metadata: Metadata = {
   description: "Il blog di Cristina Cafagno - Estetica consapevole, bellezza naturale e rivoluzione olistica. Studio83 Tenerife.",
   keywords: ["estetica", "bellezza consapevole", "Studio83", "Cristina Cafagno", "Tenerife", "trattamenti olistici"],
   authors: [{ name: "Cristina Cafagno" }],
+  alternates: {
+    types: {
+      'application/rss+xml': 'https://consapevolmentebelli.com/rss.xml',
+    },
+  },
   openGraph: {
     title: "Consapevolmente Belli | Blog Studio83",
     description: "Il blog di Cristina Cafagno - Estetica consapevole, bellezza naturale e rivoluzione olistica.",
-    url: "https://studio83.es",
+    url: "https://consapevolmentebelli.com",
     siteName: "Consapevolmente Belli",
     locale: "it_IT",
     type: "website",

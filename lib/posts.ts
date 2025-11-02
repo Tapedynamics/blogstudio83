@@ -12,6 +12,7 @@ export interface Post {
   author: string;
   image?: string;
   tags?: string[];
+  keywords?: string[];
   pinned?: boolean;
   content: string;
 }
@@ -39,6 +40,7 @@ export function getAllPosts(): Post[] {
         author: data.author || 'Cristina Cafagno',
         image: data.image,
         tags: data.tags || [],
+        keywords: data.keywords || [],
         pinned: data.pinned || false,
         content,
       };
@@ -66,6 +68,7 @@ export function getPostBySlug(slug: string): Post | null {
       author: data.author || 'Cristina Cafagno',
       image: data.image,
       tags: data.tags || [],
+      keywords: data.keywords || [],
       pinned: data.pinned || false,
       content,
     };

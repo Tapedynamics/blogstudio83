@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
   return {
     title: `${post.title} | Consapevolmente Belli`,
     description: post.excerpt,
+    keywords: post.keywords,
     authors: [{ name: post.author }],
     openGraph: {
       title: post.title,

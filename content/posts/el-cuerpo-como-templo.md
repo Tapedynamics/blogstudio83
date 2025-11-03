@@ -3,7 +3,7 @@ title: "El cuerpo como templo: aprender a conocer y respetar la piel"
 excerpt: "Descubre cómo regenerar la piel con consciencia. Desde la esponja al peeling, Cristina Cafagno de Studio83 Tenerife te guía hacia la verdadera belleza."
 date: "2025-11-02"
 author: "Cristina Cafagno"
-image: "/images/articulo3.png"
+image: "/images/articolo3.png"
 tags: ["cuidado de la piel", "regeneración celular", "peeling natural", "estética consciente", "rejuvenecimiento", "Studio83", "Cristina Cafagno", "Conscientemente Bellos", "Tenerife", "belleza auténtica", "exfoliación", "piel sana", "rituales de belleza", "centro estético Las Américas"]
 keywords: ["Studio83 Tenerife", "Cristina Cafagno", "Conscientemente Bellos", "cuidado de la piel", "peeling natural", "regeneración celular", "rejuvenecimiento facial Tenerife", "estética consciente", "belleza natural", "centro estético Las Américas", "exfoliación corporal y facial", "equilibrio piel", "tratamientos estéticos Tenerife"]
 pinned: false

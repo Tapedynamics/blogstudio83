@@ -23,12 +23,12 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
 
   if (!post) {
     return {
-      title: "Post non trovato",
+      title: "Artículo no encontrado",
     };
   }
 
   return {
-    title: `${post.title} | Consapevolmente Belli`,
+    title: `${post.title} | Conscientemente Bellos`,
     description: post.excerpt,
     keywords: post.keywords,
     authors: [{ name: post.author }],
@@ -71,7 +71,7 @@ export default async function PostPage({ params }: PostPageProps) {
           <span className="font-medium text-[--foreground]">{post.author}</span>
           <span>•</span>
           <time dateTime={post.date}>
-            {new Date(post.date).toLocaleDateString('it-IT', {
+            {new Date(post.date).toLocaleDateString('es-ES', {
               year: 'numeric',
               month: 'long',
               day: 'numeric',
@@ -146,10 +146,10 @@ export default async function PostPage({ params }: PostPageProps) {
       <div className="mt-8 pt-8 border-t border-[--border]">
         <div className="bg-[--accent] rounded-lg p-6 sm:p-8 text-center">
           <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-[--foreground]">
-            Seguimi sui Social
+            Sígueme en las Redes
           </h3>
           <p className="text-sm sm:text-base text-[--text-muted] mb-5 sm:mb-6">
-            Contenuti quotidiani, pratiche e verità sulla bellezza consapevole
+            Contenidos diarios, prácticas y verdades sobre la belleza consciente
           </p>
           <div className="flex gap-4 sm:gap-5 justify-center flex-wrap">
             <a

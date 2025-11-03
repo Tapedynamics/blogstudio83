@@ -8,15 +8,15 @@ export async function GET() {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Consapevolmente Belli | Blog Studio83</title>
+    <title>Conscientemente Bellos | Blog Studio83</title>
     <link>${siteUrl}</link>
-    <description>Il blog di Cristina Cafagno - Estetica consapevole, bellezza naturale e rivoluzione olistica. Studio83 Tenerife.</description>
-    <language>it-IT</language>
+    <description>El blog de Cristina Cafagno - Estética consciente, belleza natural y revolución holística. Studio83 Tenerife.</description>
+    <language>es-ES</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${siteUrl}/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>${siteUrl}/images/hero-bg.png</url>
-      <title>Consapevolmente Belli</title>
+      <title>Conscientemente Bellos</title>
       <link>${siteUrl}</link>
     </image>
 ${posts

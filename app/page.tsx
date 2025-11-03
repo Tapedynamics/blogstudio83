@@ -22,11 +22,11 @@ export default function Home() {
           <div className="text-center px-4 sm:px-6 max-w-4xl mx-auto">
             <div className="mb-3 sm:mb-4 text-3xl sm:text-4xl">🌿</div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 logo-conscious pb-3 sm:pb-4">
-              Consapevolmente Belli
+              Conscientemente Bellos
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-[--text-muted] mb-6 sm:mb-8 leading-relaxed">
-              Il blog di Cristina Cafagno dedicato alla bellezza consapevole,
-              naturale e olistica. Una rivoluzione contro il mondo finto dell&apos;estetica.
+              El blog de Cristina Cafagno dedicado a la belleza consciente,
+              natural y holística. Una revolución contra el mundo falso de la estética.
             </p>
             <div className="flex gap-3 sm:gap-4 justify-center flex-wrap items-center">
               <a
@@ -68,10 +68,10 @@ export default function Home() {
 
       {/* Posts Grid */}
       <section className="py-8 sm:py-12">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-[--foreground]">Ultimi Articoli</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-[--foreground]">Últimos Artículos</h2>
         {posts.length === 0 ? (
           <p className="text-[--text-muted] text-center py-12">
-            Nessun articolo disponibile al momento. Torna presto!
+            No hay artículos disponibles en este momento. ¡Vuelve pronto!
           </p>
         ) : (
           <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
@@ -87,7 +87,7 @@ export default function Home() {
               >
                 {post.pinned && (
                   <div className="absolute top-3 right-3 bg-[--primary] text-white px-3 py-1 rounded-full text-xs font-bold z-10 flex items-center gap-1">
-                    📌 INIZIA QUI
+                    📌 EMPIEZA AQUÍ
                   </div>
                 )}
                 {/* Immagine del post */}
@@ -122,7 +122,7 @@ export default function Home() {
                   </p>
                   <div className="flex items-center justify-between text-sm text-[--text-muted]">
                     <span>{post.author}</span>
-                    <span>{new Date(post.date).toLocaleDateString('it-IT')}</span>
+                    <span>{new Date(post.date).toLocaleDateString('es-ES')}</span>
                   </div>
                 </div>
               </Link>
@@ -143,15 +143,15 @@ export default function Home() {
             />
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[--foreground]">Chi Sono</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[--foreground]">Quién Soy</h2>
           <p className="text-base sm:text-lg md:text-xl text-[--text-muted] mb-4 sm:mb-6 leading-relaxed">
-            Sono <strong className="text-[--foreground]">Cristina Cafagno</strong>,
-            estetista, formatrice e mamma. Gestisco Studio83 a Tenerife, dove ogni trattamento
-            è un viaggio verso la consapevolezza di sé e la bellezza autentica.
+            Soy <strong className="text-[--foreground]">Cristina Cafagno</strong>,
+            esteticista, formadora y madre. Dirijo Studio83 en Tenerife, donde cada tratamiento
+            es un viaje hacia la consciencia de uno mismo y la belleza auténtica.
           </p>
           <p className="text-base sm:text-lg md:text-xl text-[--text-muted] leading-relaxed">
-            Questo blog è la mia dichiarazione di guerra al mondo finto della bellezza.
-            Qui troverai verità, consapevolezza e strumenti per ritrovare te stesso.
+            Este blog es mi declaración de guerra al mundo falso de la belleza.
+            Aquí encontrarás verdad, consciencia y herramientas para reencontrarte a ti mismo.
           </p>
         </div>
       </section>

@@ -25,15 +25,15 @@ export default function NewsletterForm() {
 
       if (response.ok) {
         setStatus('success');
-        setMessage(data.message || 'Iscrizione completata!');
+        setMessage(data.message || '¡Suscripción completada!');
         setEmail('');
       } else {
         setStatus('error');
-        setMessage(data.error || 'Errore durante l\'iscrizione');
+        setMessage(data.error || 'Error durante la suscripción');
       }
     } catch (error) {
       setStatus('error');
-      setMessage('Errore di connessione. Riprova più tardi.');
+      setMessage('Error de conexión. Inténtalo más tarde.');
     }
   };
 
@@ -42,11 +42,11 @@ export default function NewsletterForm() {
       <div className="text-center mb-6">
         <div className="mb-3 text-3xl sm:text-4xl">✨</div>
         <h3 className="text-xl sm:text-2xl font-bold mb-3 text-[#2d3436]">
-          Unisciti alla Rivoluzione
+          Únete a la Revolución
         </h3>
         <p className="text-sm sm:text-base text-[#6b7280] max-w-xl mx-auto">
-          Ricevi contenuti esclusivi, pratiche di bellezza consapevole e verità che non troverai altrove.
-          Direttamente nella tua casella di posta.
+          Recibe contenidos exclusivos, prácticas de belleza consciente y verdades que no encontrarás en ninguna otra parte.
+          Directamente en tu bandeja de entrada.
         </p>
       </div>
 
@@ -56,7 +56,7 @@ export default function NewsletterForm() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="La tua email"
+            placeholder="Tu email"
             required
             disabled={status === 'loading'}
             className="flex-1 px-4 py-3 rounded-full border-2 border-[#e7e3d9] bg-white text-[#2d3436] placeholder:text-[#6b7280] focus:outline-none focus:ring-2 focus:ring-[#7d9d7f] focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed text-base"
@@ -66,7 +66,7 @@ export default function NewsletterForm() {
             disabled={status === 'loading'}
             className="px-8 py-3 bg-[#7d9d7f] text-white rounded-full font-semibold hover:bg-[#5d7d5f] hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap text-base shadow-md"
           >
-            {status === 'loading' ? 'Invio...' : 'Iscriviti'}
+            {status === 'loading' ? 'Enviando...' : 'Suscríbete'}
           </button>
         </div>
 
@@ -83,8 +83,8 @@ export default function NewsletterForm() {
         )}
 
         <p className="mt-4 text-xs text-center text-[#6b7280]">
-          Iscrivendoti, accetti di ricevere email da Consapevolmente Belli.
-          Puoi disiscriverti in qualsiasi momento.
+          Al suscribirte, aceptas recibir emails de Conscientemente Bellos.
+          Puedes darte de baja en cualquier momento.
         </p>
       </form>
     </div>

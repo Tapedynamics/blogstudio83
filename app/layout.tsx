@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Consapevolmente Belli | Blog Studio83",
-  description: "Il blog di Cristina Cafagno - Estetica consapevole, bellezza naturale e rivoluzione olistica. Studio83 Tenerife.",
-  keywords: ["estetica", "bellezza consapevole", "Studio83", "Cristina Cafagno", "Tenerife", "trattamenti olistici"],
+  title: "Conscientemente Bellos | Blog Studio83",
+  description: "El blog de Cristina Cafagno - Estética consciente, belleza natural y revolución holística. Studio83 Tenerife.",
+  keywords: ["estética", "belleza consciente", "Studio83", "Cristina Cafagno", "Tenerife", "tratamientos holísticos"],
   authors: [{ name: "Cristina Cafagno" }],
   alternates: {
     types: {
@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Consapevolmente Belli | Blog Studio83",
-    description: "Il blog di Cristina Cafagno - Estetica consapevole, bellezza naturale e rivoluzione olistica.",
+    title: "Conscientemente Bellos | Blog Studio83",
+    description: "El blog de Cristina Cafagno - Estética consciente, belleza natural y revolución holística.",
     url: "https://consapevolmentebelli.com",
-    siteName: "Consapevolmente Belli",
-    locale: "it_IT",
+    siteName: "Conscientemente Bellos",
+    locale: "es_ES",
     type: "website",
   },
 };
@@ -39,12 +39,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="it">
+    <html lang="es">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <header className="border-b border-[--border] bg-white/80 backdrop-blur-sm sticky top-0 z-50">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
             <Link href="/" className="text-xl sm:text-2xl md:text-4xl font-bold logo-conscious-header hover:opacity-80 transition-opacity">
-              Consapevolmente Belli
+              Conscientemente Bellos
             </Link>
             <nav className="flex gap-3 sm:gap-6 items-center">
               <Link href="/" className="hidden sm:inline text-[--text-muted] hover:text-[--primary] transition-colors">
@@ -70,9 +70,9 @@ export default function RootLayout({
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
               <div>
-                <h3 className="font-bold mb-4 text-[--foreground]">Consapevolmente Belli</h3>
+                <h3 className="font-bold mb-4 text-[--foreground]">Conscientemente Bellos</h3>
                 <p className="text-sm text-[--text-muted]">
-                  Il blog di Cristina Cafagno dedicato alla bellezza consapevole e all&apos;estetica olistica.
+                  El blog de Cristina Cafagno dedicado a la belleza consciente y la estética holística.
                 </p>
               </div>
 
@@ -92,7 +92,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <h3 className="font-bold mb-4 text-[--foreground]">Seguimi</h3>
+                <h3 className="font-bold mb-4 text-[--foreground]">Sígueme</h3>
                 <div className="flex gap-3 flex-wrap">
                   <a
                     href="https://www.instagram.com/studio83_beautysolution/"
@@ -132,7 +132,7 @@ export default function RootLayout({
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 flex items-center justify-center bg-gradient-to-br from-[--primary] to-[--secondary] rounded-full hover:shadow-lg transition-all text-white"
-                    aria-label="Sito Web Studio83"
+                    aria-label="Sitio Web Studio83"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
@@ -143,11 +143,11 @@ export default function RootLayout({
             </div>
 
             <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-[--border] text-center text-xs sm:text-sm text-[--text-muted]">
-              <p>&copy; {new Date().getFullYear()} Studio83. Tutti i diritti riservati.</p>
+              <p>&copy; {new Date().getFullYear()} Studio83. Todos los derechos reservados.</p>
               <div className="mt-2 flex justify-center gap-3 sm:gap-4 flex-wrap">
-                <a href="https://studio83.es/aviso-legal/" className="hover:text-[--primary]">Avviso Legale</a>
-                <a href="https://studio83.es/politica-de-privacidad/" className="hover:text-[--primary]">Privacy</a>
-                <a href="https://studio83.es/politica-de-cookies/" className="hover:text-[--primary]">Cookie</a>
+                <a href="https://studio83.es/aviso-legal/" className="hover:text-[--primary]">Aviso Legal</a>
+                <a href="https://studio83.es/politica-de-privacidad/" className="hover:text-[--primary]">Privacidad</a>
+                <a href="https://studio83.es/politica-de-cookies/" className="hover:text-[--primary]">Cookies</a>
               </div>
             </div>
           </div>

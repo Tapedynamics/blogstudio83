@@ -3,7 +3,7 @@ title: "La Belleza que se Vive: cuando el cuidado del cuerpo se convierte en bie
 excerpt: "Descubre cómo vivir la belleza desde dentro. En Studio83, cada tratamiento estético es un acompañamiento para reconectar cuerpo, energía y alma."
 date: "2025-11-10"
 author: "Cristina Cafagno"
-image: "/images/articolo4.png"
+image: "/images/art4definitivo.png"
 tags: ["belleza consciente", "estética holística", "bienestar femenino", "cuidado corporal", "Tenerife", "Studio83", "belleza natural", "equilibrio interior", "rituales de belleza", "cuerpo y alma"]
 keywords: ["estética consciente Tenerife", "belleza integral Tenerife", "bienestar corporal y emocional", "tratamientos energéticos y faciales Tenerife", "centro estética holística", "Studio83 Tenerife", "cuidado de la piel consciente", "armonía cuerpo y alma", "cómo conectar cuerpo y emoción", "tratamientos faciales naturales en Tenerife", "estética holística cerca de mí", "equilibrio interior y belleza exterior", "rituales de belleza consciente"]
 pinned: false
